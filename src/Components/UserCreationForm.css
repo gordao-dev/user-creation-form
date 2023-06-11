@@ -1,0 +1,149 @@
+/**
+ * Estilos da aplicação principal.
+ *
+ * .App é o contêiner principal que centraliza o conteúdo e define o plano de fundo.
+ * Ele contém uma imagem de plano de fundo, texto centralizado e um espaçamento superior.
+ * A altura mínima é definida para cobrir toda a tela.
+ */
+ .App {
+  text-align: center;
+  background-image: url('../Images/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+/**
+ * Estilos para mensagens de erro.
+ *
+ * .Error define a cor do texto como vermelho, tamanho da fonte como 12px
+ * e margem superior de 5px.
+ */
+.Error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/**
+ * Estilos para o cabeçalho principal (<h1>).
+ *
+ * h1 define a cor do texto como #fffefe.
+ */
+h1 {  
+  color: #fffefe;
+}
+
+/**
+ * Estilos para o formulário de criação de usuário.
+ *
+ * .form-container define a largura máxima de 400px, centraliza o formulário horizontalmente,
+ * adiciona um espaçamento interno de 20px, define a cor de fundo como #12161a,
+ * bordas arredondadas de 5px e uma sombra.
+ */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #12161a;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * Estilos para as etiquetas de campo do formulário.
+ *
+ * .form-container label é um elemento de bloco com margem inferior de 10px,
+ * cor do texto como #fffefe e peso da fonte em negrito.
+ */
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fffefe;
+  font-weight: bold;
+}
+
+/**
+ * Estilos para os campos de entrada de texto do formulário.
+ *
+ * .form-container input[type="text"],
+ * .form-container input[type="email"],
+ * .form-container input[type="tel"],
+ * .form-container input[type="password"] têm largura de 100%,
+ * preenchimento de 8px, borda de 1px sólida com cor #050505,
+ * bordas arredondadas de 4px, cor de fundo #a9dd68 e caixa de dimensionamento da borda.
+ * Margem inferior de 15px para separar os campos.
+ */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #050505;
+  border-radius: 4px;
+  background-color: #a9dd68;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/**
+ * Estilos para o campo de entrada de telefone no formulário.
+ *
+ * .form-container .phone-input-container é um contêiner flexível que alinha os itens verticalmente,
+ * com preenchimento de 8px.
+ */
+.form-container .phone-input-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+/**
+ * Estilos para o campo de entrada de telefone no formulário.
+ *
+ * .form-container input[type="tel"] tem altura de 40px e alinhamento vertical centralizado.
+ */
+.form-container input[type="tel"] {
+  height: 40px;
+  vertical-align: middle;
+}
+
+/**
+ * Estilos para o campo de seleção de código do país no formulário.
+ *
+ * .form-container select[name="countryCode"] tem preenchimento de 8px,
+ * cor de fundo #a9dd68, margem inferior de 15px e borda de 1px sólida com cor #050505.
+ */
+.form-container select[name="countryCode"] {
+  padding: 8px;
+  background-color: #a9dd68;
+  margin: 0 0 15px;
+  border: 1px solid #050505;
+}
+
+/**
+ * Estilos para o botão de envio do formulário.
+ *
+ * .form-container button[type="submit"] tem cor de fundo #07cb76, cor do texto #050505,
+ * preenchimento de 10px 20px, borda sem estilos, bordas arredondadas de 4px e cursor como ponteiro.
+ */
+.form-container button[type="submit"] {
+  background-color: #07cb76;
+  color: #050505;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/**
+ * Estilos para o botão de envio do formulário quando o mouse está sobre ele.
+ *
+ * .form-container button:hover altera a cor de fundo para #95d249.
+ */
+.form-container button:hover {
+  background-color: #95d249;
+}
